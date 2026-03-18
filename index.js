@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');  
 const bodyParser = require('body-parser');
@@ -6,7 +7,7 @@ const cors = require('cors');
 const app = express();
 
 const corsOptions = {
-    origin: ['https://portfolio-frontend-peach-one.vercel.app', 'https://www.niteshtechfolio.site','https://niteshtechfolio.site'], 
+    origin: ['https://portfolio-frontend-peach-one.vercel.app', 'https://www.niteshtechfolio.site','https://niteshtechfolio.site', 'http://localhost:5173', 'http://localhost:3000'], 
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 
     credentials: true, 
     allowedHeaders: ['Content-Type', 'Authorization'],
